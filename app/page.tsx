@@ -1,17 +1,25 @@
+import Client from "@/components/Client";
+import Experiences from "@/components/Experiences";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import MyApproach from "@/components/MyApproach";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavber";
-import { FaHome } from "react-icons/fa";
+import { navItems } from "@/data";
 
 export default function Home() {
   return (
-    <main className="relative bg-[#000319] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-[#000319] flex justify-center items-center overflow-clip flex-col mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
-        <FloatingNav
-          navItems={[{ name: "Home", link: "/", icon: <FaHome /> }]}
-        />
+        <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <RecentProjects />
+        <Client />
+        <Experiences />
+        <MyApproach />
+        <Footer />
       </div>
     </main>
   );
