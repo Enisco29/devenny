@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaEnvelope, FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -30,11 +30,15 @@ const Hero = () => {
         />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-[#000319]" />
       </div>
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex flex-col justify-center items-center relative mb-20 z-10">
+        <div className="flex justify-center items-center">
+          <img
+            src="/profile.png"
+            alt="profile-image"
+            className="w-32 h-32 sm:h-45 sm:w-45 rounded-full border-4 border-purple-300 shadow-lg object-cover transition-transform duration-300 hover:scale-105 hover:shadow-2xl bg-white"
+          />
+        </div>
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[65vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
-          </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             duration={2}
@@ -44,13 +48,22 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
             Hi, I&apos;m Fisayo, a JavaScript Developer
           </p>
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex gap-4 ">
+            <a href="mailto:opeyemioluwafisayo29@gmail.com">
+              <MagicButton
+                title="Hire Me"
+                icon={<FaEnvelope />}
+                position="right"
+              />
+            </a>
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

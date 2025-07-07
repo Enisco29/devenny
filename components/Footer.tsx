@@ -23,18 +23,21 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col gap-3 justify-between items-center">
         <p className="md:text-base text-[#ddd9d9] text-sm md:font-normal font-light">
-          Copyright © 2025 Enny
+          Copyright © {new Date().getFullYear()} DevEnny
         </p>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((profile) => (
-            <div
+            <a
               key={profile.id}
+              href={profile.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-slate-950 rounded-lg border border-black"
             >
-              <img src={profile.img} alt={profile.id} width={20} height={20} />
-            </div>
+              <img src={profile.img} alt={String(profile.id)} width="20" height="20" />
+            </a>
           ))}
         </div>
       </div>
