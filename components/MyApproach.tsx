@@ -12,17 +12,12 @@ const MyApproach = () => {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4 ">
         <Card
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui magnam ratione non repellendus nulla atque illo. Ducimus nisi consectetur, quibusdam id officia temporibus numquam, ut laborum quidem, sint dolores. Iusto?"
+          description="I start every project by understanding your goals and mapping out a clear, actionable plan. This ensures we’re always moving in the right direction."
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-        >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
-          />
-        </Card>
+        />
         <Card
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui magnam ratione non repellendus nulla atque illo. Ducimus nisi consectetur, quibusdam id officia temporibus numquam, ut laborum quidem, sint dolores. Iusto?"
+          description="I keep you updated with regular progress reports and transparent communication, so you’re always in the loop as your project comes to life."
           title="Development & Progress update"
           icon={<AceternityIcon order="Phase 2" />}
         >
@@ -37,7 +32,7 @@ const MyApproach = () => {
           />
         </Card>
         <Card
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui magnam ratione non repellendus nulla atque illo. Ducimus nisi consectetur, quibusdam id officia temporibus numquam, ut laborum quidem, sint dolores. Iusto?"
+          description="Once everything is ready, I handle the launch smoothly and make sure your project is set up for long-term success."
           title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
         >
@@ -55,7 +50,7 @@ const MyApproach = () => {
 const Card = ({
   title,
   icon,
-  children,
+  children, // not used anymore
   description,
 }: {
   title: string;
@@ -63,46 +58,22 @@ const Card = ({
   children?: React.ReactNode;
   description: string;
 }) => {
-  const [hovered, setHovered] = React.useState(false);
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 lg:h-[35rem] rounded-3xl relative"
+      className="bg-gradient-to-br from-[#101223]/95 via-[#181c2f]/95 to-[#3a2177]/90 backdrop-blur-md border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:ring-2 hover:ring-purple-400/40 active:scale-100 transition-all duration-300 max-w-sm w-full mx-auto p-8 lg:h-[35rem] rounded-3xl relative flex flex-col items-center justify-center gap-6"
     >
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-
-      <AnimatePresence>
-        {hovered && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="h-full w-full absolute inset-0 z-10"
-          >
-            {children}
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <div className="relative z-20">
-        <div className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
-          {icon}
-        </div>
-        <h2 className="dark:text-white opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 text-3xl transition text-center duration-200">
-          {title}
-        </h2>
-        <h2
-          className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 text-center transition duration-200"
-          style={{
-            color: "#e4ecff",
-          }}
-        >
-          {description}
-        </h2>
+      <div className="flex items-center justify-center mb-2">
+        {icon}
       </div>
+      <h2 className="dark:text-white text-black mt-4 font-bold text-3xl text-center">
+        {title}
+      </h2>
+      <h2
+        className="dark:text-white text-sm font-bold text-center mt-4"
+        style={{ color: "#e4ecff" }}
+      >
+        {description}
+      </h2>
     </div>
   );
 };

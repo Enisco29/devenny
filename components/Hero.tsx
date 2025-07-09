@@ -4,6 +4,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaEnvelope, FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -32,10 +33,12 @@ const Hero = () => {
       </div>
       <div className="flex flex-col justify-center items-center relative mb-20 z-10">
         <div className="flex justify-center items-center">
-          <img
-            src="/profile.png"
+          <Image
+            src="/profile.webp"
             alt="profile-image"
             className="w-32 h-32 sm:h-45 sm:w-45 rounded-full border-4 border-purple-300 shadow-lg object-cover transition-transform duration-300 hover:scale-105 hover:shadow-2xl bg-white"
+            width={128}
+            height={128}
           />
         </div>
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[65vw] flex flex-col items-center justify-center">
@@ -49,11 +52,12 @@ const Hero = () => {
             Hi, I&apos;m Fisayo, a JavaScript Developer
           </p>
           <div className="flex gap-4 ">
-            <a href="mailto:opeyemioluwafisayo29@gmail.com">
+            <a href="mailto:opeyemioluwafisayo29@gmail.com" className="group">
               <MagicButton
                 title="Hire Me"
                 icon={<FaEnvelope />}
                 position="right"
+                otherClasses="!bg-gradient-to-r from-purple-400 via-pink-400 to-emerald-400 !text-[#000319] !shadow-lg !ring-2 !ring-purple-300 !ring-offset-2 group-hover:scale-105 group-hover:shadow-purple-400/60 animate-pulse hover:animate-none transition-transform duration-300"
               />
             </a>
             <a href="#about">

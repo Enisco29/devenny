@@ -39,7 +39,8 @@ export const gridItems = [
   {
     id: 4,
     title: "Tech enthusiast with a passion for development.",
-    description: "",
+    description:
+      "17-year-old tech enthusiast with 2 years of web development experience, eager to build and learn.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -74,68 +75,59 @@ export const projects = [
     id: 1,
     title: "FullStack Ecommerce web application",
     des: "A comprehensive ecommerce platform with full-stack features, enabling users to browse, shop, and manage orders seamlessly.",
-    img: "/p1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    img: "/p1.webp",
+    iconLists: ["/re.svg", "/tail.svg", "/node.webp", "mDB.webp"],
     link: "https://mofiyin.vercel.app",
-    github: "https://github.com/Enisco29/greencart"
+    github: "https://github.com/Enisco29/greencart",
   },
   {
     id: 2,
     title: "Quickblog - A Blogging Application",
     des: "A modern blogging platform for creating, editing, and sharing posts with an intuitive and user-friendly interface.",
-    img: "/p2.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    img: "/p2.webp",
+    iconLists: ["/re.svg", "/tail.svg", "/node.webp", "mDB.webp"],
     link: "https://quickblog-theta.vercel.app",
-    github: "https://github.com/Enisco29/quickblog"
+    github: "https://github.com/Enisco29/quickblog",
   },
   {
     id: 3,
     title: "Quickchat - Chatting Web App",
     des: "A real-time chat application enabling seamless communication with modern features and a clean UI.",
-    img: "/p3.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    img: "/p3.webp",
+    iconLists: ["/re.svg", "/tail.svg", "/node.webp", "mDB.webp"],
     link: "https://quickchat-tan.vercel.app",
-    github: "https://github.com/Enisco29/quickchat"
+    github: "https://github.com/Enisco29/quickchat",
   },
   {
     id: 4,
     title: "UI design of Bookmark Page",
     des: "A visually appealing and interactive UI design for a bookmark landing page, inspired by modern web standards.",
-    img: "/p4.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    img: "/p4.webp",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
     link: "https://bookmark-landing-page-master-green.vercel.app",
-    github: "https://github.com/Enisco29/bookmark-landing-page-master"
+    github: "https://github.com/Enisco29/bookmark-landing-page-master",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Fisayo was a game-changer for our business. He delivered high-quality results on time and communicated clearly throughout the project. I highly recommend him!",
+    img: "martins.jpg",
+    name: "MR Martins",
+    title: "CEO at Tinzwave",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Fisayo's expertise and dedication exceeded our expectations. He brought our vision to life with professionalism and creativity. We look forward to future collaborations!",
+    img: "ogechuku.jpg",
+    name: "MRS Ogechukwu",
+    title: "CEO at Melodia Coding Academy",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Fisayo was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Fisayo's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Fisayo is the ideal partner.",
+    img: "profile.svg",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
@@ -145,14 +137,14 @@ export const companies = [
   {
     id: 1,
     name: "melodia",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    img: "/melodia.webp",
+    nameImg: "",
   },
   {
     id: 2,
     name: "megatek",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    img: "/megatek.webp",
+    nameImg: "",
   },
   // {
   //   id: 3,
@@ -209,12 +201,12 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    url: "https://github.com/Enisco29"
+    url: "https://github.com/Enisco29",
   },
   {
     id: 2,
     img: "/twit.svg",
-    url: "https://twitter.com/ennycodes"
+    url: "https://twitter.com/ennycodes",
   },
   // {
   //   id: 3,

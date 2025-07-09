@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaTwitter, FaRegFilePdf } from "react-icons/fa6";
+import Image from "next/image";
 
 const email = "opeyemioluwafisayo29@gmail.com";
 const githubUrl = "https://github.com/Enisco29";
@@ -11,10 +12,12 @@ const TopProfileNav = () => {
     <nav className="w-full flex items-center justify-between sm:px-8 px-4 py-3 fixed top-0 left-0 z-[6000] backdrop-blur-md">
       {/* Left: Profile Image */}
       <div className="flex items-center gap-4">
-        <img
-          src="/profile.png"
+        <Image
+          src="/profile.webp"
           alt="Profile"
-          className="w-8 h-8 rounded-full border border-white/20 bg-white object-cover"
+          className="w-8 h-8 rounded-full border border-white/20 bg-[] bg-white object-cover"
+          width={32}
+          height={32}
         />
         <a
           href={`mailto:${email}`}

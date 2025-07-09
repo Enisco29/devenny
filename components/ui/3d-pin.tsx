@@ -6,12 +6,12 @@ import { cn } from "@/lib/utils";
 //container for recent projects
 export const PinContainer = ({
   children,
-  title,
+  href,
   className,
   containerClassName,
 }: {
   children: React.ReactNode;
-  title?: string;
+  href?: string;
   className?: string;
   containerClassName?: string;
 }) => {
@@ -26,8 +26,11 @@ export const PinContainer = ({
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
   };
 
+  const ContainerTag = href ? 'a' : 'div';
+
   return (
-    <a
+    <ContainerTag
+      {...(href ? { href, target: "_blank", rel: "noopener noreferrer" } : {})}
       className={cn(
         "relative group/pin z-50  cursor-pointer",
         containerClassName
@@ -51,8 +54,7 @@ export const PinContainer = ({
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} />
-    </a>
+    </ContainerTag>
   );
 };
 
