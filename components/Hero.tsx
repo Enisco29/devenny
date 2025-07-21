@@ -52,7 +52,7 @@ const Hero = () => {
             Hi, I&apos;m Fisayo, a JavaScript Developer
           </p>
           <div className="flex gap-4 ">
-            <a href="mailto:opeyemioluwafisayo29@gmail.com" className="group">
+            <a href="#contact" className="group">
               <MagicButton
                 title="Hire Me"
                 icon={<FaEnvelope />}
@@ -60,7 +60,7 @@ const Hero = () => {
                 otherClasses="!bg-gradient-to-r from-purple-400 via-pink-400 to-emerald-400 !text-[#000319] !shadow-lg !ring-2 !ring-purple-300 !ring-offset-2 group-hover:scale-105 group-hover:shadow-purple-400/60 animate-pulse hover:animate-none transition-transform duration-300"
               />
             </a>
-            <a href="#about">
+            <a href="#projects">
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}

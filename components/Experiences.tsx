@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/MovingButton";
@@ -14,7 +14,7 @@ const Experiences = () => {
   }, []);
 
   return (
-    <div className="pb-20" id="testimonials">
+    <div className="pb-20 mt-10" id="testimonials">
       <h1 className="text-3xl font-bold lg:text-4xl text-white text-center">
         My <span className="text-purple-300">work experience</span>
       </h1>

@@ -2,10 +2,25 @@ import React from "react";
 import { InfiniteMovingCards } from "./ui/InifiniteMovingCards";
 import { companies, testimonials } from "@/data";
 import Image from "next/image";
+import MagicButton from "./ui/MagicButton";
+import { FaEnvelope } from "react-icons/fa6";
 
 const Client = () => {
   return (
-    <div className="pb-20" id="testimonials">
+    <div className=" flex items-center flex-col" id="testimonials">
+      <a
+        href="https://docs.google.com/document/d/1VrmnBrKY2PoyAqcZPfpLqOtPhDxHtm1ytzW-cCBhkeM/export?format=pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="resume"
+        className="group mb-20 md:mb-30"
+      >
+        <MagicButton
+          title="Download resume"
+          icon={<FaEnvelope />}
+          position="right"
+        />
+      </a>
       <h1 className="text-3xl font-bold lg:text-4xl text-white text-center">
         Kind words from{" "}
         <span className="text-purple-300">satisfied clients</span>

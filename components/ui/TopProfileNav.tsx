@@ -1,11 +1,13 @@
 import React from "react";
-import { FaGithub, FaTwitter, FaRegFilePdf } from "react-icons/fa6";
+import { FaGithub, FaTwitter, FaRegFilePdf, FaLinkedin } from "react-icons/fa6";
 import Image from "next/image";
 
 const email = "opeyemioluwafisayo29@gmail.com";
 const githubUrl = "https://github.com/Enisco29";
 const twitterUrl = "https://twitter.com/ennycodes";
-const resumeUrl = "/resume.pdf"; // Update this if you have a real resume link
+const linkedInUrl = "https://www.linkedin.com/in/eniola-opeyemi-b6a701334";
+const resumeUrl =
+  "https://docs.google.com/document/d/1VrmnBrKY2PoyAqcZPfpLqOtPhDxHtm1ytzW-cCBhkeM/export?format=pdf";
 
 const TopProfileNav = () => {
   return (
@@ -19,12 +21,9 @@ const TopProfileNav = () => {
           width={32}
           height={32}
         />
-        <a
-          href={`mailto:${email}`}
-          className="hover:underline text-sm sm:text-xs text-white font-medium md:text-base truncate max-w-[40vw] text-center"
-        >
+        <p className="hover:underline text-sm sm:text-xs text-white font-medium md:text-base truncate max-w-[40vw] text-center">
           {email}
-        </a>
+        </p>
       </div>
       {/* Center: Email */}
       {/* Right: Icons */}
@@ -55,6 +54,15 @@ const TopProfileNav = () => {
           className="text-white hover:text-purple-300 transition text-xl md:text-2xl"
         >
           <FaTwitter />
+        </a>
+        <a
+          href={linkedInUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+          className="text-white hover:text-purple-300 transition text-xl md:text-2xl"
+        >
+          <FaLinkedin />
         </a>
       </div>
     </nav>

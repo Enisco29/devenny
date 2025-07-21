@@ -208,9 +208,9 @@ export const socialMedia = [
     img: "/twit.svg",
     url: "https://twitter.com/ennycodes",
   },
-  // {
-  //   id: 3,
-  //   img: "/link.svg",
-  //   url: "https://linkedin.com/in/your-profile"
-  // },
+  {
+    id: 3,
+    img: "/link.svg",
+    url: "https://www.linkedin.com/in/eniola-opeyemi-b6a701334",
+  },
 ];
