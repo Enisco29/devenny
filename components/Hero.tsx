@@ -49,7 +49,7 @@ const Hero = () => {
             words="Transforming Concepts into Seamless User Experiences"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
-            Hi, I&apos;m Fisayo, a JavaScript Developer
+            Hi, I&apos;m Eniola, a JavaScript Developer
           </p>
           <div className="flex gap-4 ">
             <a href="#contact" className="group">

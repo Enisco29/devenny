@@ -9,8 +9,9 @@ const Client = () => {
   return (
     <div className=" flex items-center flex-col" id="testimonials">
       <a
-        href="https://docs.google.com/document/d/1VrmnBrKY2PoyAqcZPfpLqOtPhDxHtm1ytzW-cCBhkeM/export?format=pdf"
+        href="https://drive.google.com/uc?export=download&id=1K6SfhrMpSjxZuLys3pNaUb9lBa06xOIf"
         target="_blank"
+        download
         rel="noopener noreferrer"
         title="resume"
         className="group mb-20 md:mb-30"

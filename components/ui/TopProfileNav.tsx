@@ -7,7 +7,7 @@ const githubUrl = "https://github.com/Enisco29";
 const twitterUrl = "https://twitter.com/ennycodes";
 const linkedInUrl = "https://www.linkedin.com/in/eniola-opeyemi-b6a701334";
 const resumeUrl =
-  "https://docs.google.com/document/d/1VrmnBrKY2PoyAqcZPfpLqOtPhDxHtm1ytzW-cCBhkeM/export?format=pdf";
+  "https://drive.google.com/uc?export=download&id=1K6SfhrMpSjxZuLys3pNaUb9lBa06xOIf";
 
 const TopProfileNav = () => {
   return (
@@ -30,6 +30,7 @@ const TopProfileNav = () => {
       <div className="flex items-center sm:gap-7 gap-4">
         <a
           href={resumeUrl}
+          download
           target="_blank"
           rel="noopener noreferrer"
           title="Resume"
