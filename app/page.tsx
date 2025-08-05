@@ -15,7 +15,17 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <RecentProjects />
+        <RecentProjects
+        magicBtnUrl="/projects"
+        magicBtntitle="View all"
+        maxProjects={4}
+          heading={
+            <h1 className="text-3xl font-bold lg:text-4xl text-white text-center">
+              A small selection of{" "}
+              <span className="text-purple-300">recent projects</span>
+            </h1>
+          }
+        />
         <Client />
         <Experiences />
         <MyApproach />

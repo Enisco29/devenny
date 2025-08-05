@@ -1,23 +1,34 @@
+"use client"
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
+import MagicButton from "./ui/MagicButton";
+import { useRouter } from "next/navigation";
 
-const RecentProjects = () => {
+const RecentProjects = ({
+  heading,
+  magicBtnUrl,
+  magicBtntitle,
+  maxProjects,
+}: {
+  heading: any;
+  magicBtnUrl: string;
+  magicBtntitle: string;
+  maxProjects?: number;
+}) => {
+  const router = useRouter();
   return (
-    <div className="py-20" id="projects">
-      <h1 className="text-3xl font-bold lg:text-4xl text-white text-center">
-        A small selection of{" "}
-        <span className="text-purple-300">recent projects</span>
-      </h1>
+    <div className="py-20 flex items-center flex-col" id="projects">
+      {heading}
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
-        {projects.map(({ id, title, des, img, iconLists, link, github }) => (
+        {projects.slice(0, maxProjects || projects.length).map(({ id, title, des, img, iconLists, link, github }) => (
           <div
             key={id}
             className="sm:h-[38rem] lg:min-h-[32.5rem] h-[28rem] flex items-center sm:w-[570px] justify-center w-[80vw]"
           >
-            <PinContainer href={github} className="text-white">
+            <PinContainer className="text-white">
               <div className="relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] w-[80vw] overflow-hidden h-[30vh] mb-10">
                 <Image
                   src="/bg.png"
@@ -60,7 +71,18 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center gap-2">
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center"
+                  >
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple-300">
+                      GitHub
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </a>
                   <a
                     href={link}
                     target="_blank"
@@ -68,7 +90,7 @@ const RecentProjects = () => {
                     className="flex items-center"
                   >
                     <p className="flex lg:text-xl md:text-xs text-sm text-purple-300">
-                      Check Live Site
+                      Live Site
                     </p>
                     <FaLocationArrow className="ms-3" color="#CBACF9" />
                   </a>
@@ -77,7 +99,14 @@ const RecentProjects = () => {
             </PinContainer>
           </div>
         ))}
+        
       </div>
+      <MagicButton
+          title={magicBtntitle}
+          handleClick={() => router.push(magicBtnUrl)}
+          icon={<FaLocationArrow />}
+          position="right"
+        />
     </div>
   );
 };

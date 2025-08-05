@@ -3,6 +3,8 @@ import { workExperience } from "@/data";
 import React from "react";
 import { Button } from "./ui/MovingButton";
 import Image from "next/image";
+import MagicButton from "./ui/MagicButton";
+import { FaEnvelope } from "react-icons/fa6";
 
 const Experiences = () => {
   const [durations, setDurations] = React.useState<number[]>([]);
@@ -14,7 +16,7 @@ const Experiences = () => {
   }, []);
 
   return (
-    <div className="pb-20 mt-10" id="testimonials">
+    <div className="md:pb-20 mt-15 flex flex-col" id="testimonials">
       <h1 className="text-3xl font-bold lg:text-4xl text-white text-center">
         My <span className="text-purple-300">work experience</span>
       </h1>
@@ -48,7 +50,22 @@ const Experiences = () => {
             </div>
           </Button>
         ))}
+        
       </div>
+      <a
+          href="https://drive.google.com/uc?export=download&id=1K6SfhrMpSjxZuLys3pNaUb9lBa06xOIf"
+          target="_blank"
+          download
+          rel="noopener noreferrer"
+          title="resume"
+          className="group md:mb-2 mt-15 md:mt-10 text-center"
+        >
+          <MagicButton
+            title="Download resume"
+            icon={<FaEnvelope />}
+            position="right"
+          />
+        </a>
     </div>
   );
 };

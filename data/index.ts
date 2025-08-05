@@ -72,6 +72,25 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 5,
+    title: "Voice AI mock interview",
+    des: "An AI-powered platform for conducting mock interviews using voice technology, helping users prepare for real interviews.",
+    img: "/p5.png",
+    iconLists: ["/re.svg", "/tail.svg", "/node.webp", "/mDB.webp"],
+    link: "https://prepwise-murex.vercel.app",
+    github: "https://github.com/Enisco29/ai_mock_interview",
+  },
+  {
+    id: 4,
+    title: "Task Management Web app",
+    des: "A web application designed to help users efficiently manage tasks, track progress, and boost productivity.",
+    img: "/p4.png",
+    iconLists: ["/re.svg", "/tail.svg", "/node.webp", "/mDB.webp"],
+    link: "https://tasksflow-psi.vercel.app",
+    github: "https://github.com/Enisco29/tasksflow",
+  },
+
+  {
     id: 1,
     title: "FullStack Ecommerce web application",
     des: "A comprehensive ecommerce platform with full-stack features, enabling users to browse, shop, and manage orders seamlessly.",
@@ -98,15 +117,6 @@ export const projects = [
     link: "https://quickchat-tan.vercel.app",
     github: "https://github.com/Enisco29/quickchat",
   },
-  {
-    id: 4,
-    title: "UI design of Bookmark Page",
-    des: "A visually appealing and interactive UI design for a bookmark landing page, inspired by modern web standards.",
-    img: "/p4.webp",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "https://bookmark-landing-page-master-green.vercel.app",
-    github: "https://github.com/Enisco29/bookmark-landing-page-master",
-  },
 ];
 
 export const testimonials = [
@@ -124,13 +134,13 @@ export const testimonials = [
     name: "MRS Ogechukwu",
     title: "CEO at Melodia Coding Academy",
   },
-  {
-    quote:
-      "Collaborating with Fisayo was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Fisayo's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Fisayo is the ideal partner.",
-    img: "profile.svg",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+  // {
+  //   quote:
+  //     "Collaborating with Fisayo was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Fisayo's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Fisayo is the ideal partner.",
+  //   img: "profile.svg",
+  //   name: "Michael Johnson",
+  //   title: "Director of AlphaStream Technologies",
+  // },
 ];
 
 export const companies = [
@@ -211,6 +221,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    url: "https://www.linkedin.com/in/eniola-opeyemi-b6a701334",
+    url: "https://www.linkedin.com/in/ennycodes",
   },
 ];

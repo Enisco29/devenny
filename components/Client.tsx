@@ -8,20 +8,6 @@ import { FaEnvelope } from "react-icons/fa6";
 const Client = () => {
   return (
     <div className=" flex items-center flex-col" id="testimonials">
-      <a
-        href="https://drive.google.com/uc?export=download&id=1K6SfhrMpSjxZuLys3pNaUb9lBa06xOIf"
-        target="_blank"
-        download
-        rel="noopener noreferrer"
-        title="resume"
-        className="group mb-20 md:mb-30"
-      >
-        <MagicButton
-          title="Download resume"
-          icon={<FaEnvelope />}
-          position="right"
-        />
-      </a>
       <h1 className="text-3xl font-bold lg:text-4xl text-white text-center">
         Kind words from{" "}
         <span className="text-purple-300">satisfied clients</span>
