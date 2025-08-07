@@ -80,7 +80,7 @@ export const projects = [
     img: p5,
     iconLists: ["/re.svg", "/tail.svg", "/node.webp", "/mDB.webp"],
     link: "https://prepwise-murex.vercel.app",
-    github: "https://github.com/Enisco29/ai_mock_interview",
+    github: "https://github.com/Enisco29/prepwise",
   },
   {
     id: 4,
