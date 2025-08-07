@@ -22,7 +22,7 @@ const RecentProjects = ({
   return (
     <div className="py-20 flex items-center flex-col" id="projects">
       {heading}
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-15 sm:gap-y-8 mt-10 max-sm:mb-15">
         {projects.slice(0, maxProjects || projects.length).map(({ id, title, des, img, iconLists, link, github }) => (
           <div
             key={id}
