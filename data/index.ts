@@ -1,3 +1,5 @@
+import p5 from "../public/P5.webp"
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -75,7 +77,7 @@ export const projects = [
     id: 5,
     title: "Voice AI mock interview",
     des: "An AI-powered platform for conducting mock interviews using voice technology, helping users prepare for real interviews.",
-    img: "/p5.webp",
+    img: p5,
     iconLists: ["/re.svg", "/tail.svg", "/node.webp", "/mDB.webp"],
     link: "https://prepwise-murex.vercel.app",
     github: "https://github.com/Enisco29/ai_mock_interview",
